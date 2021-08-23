@@ -15,11 +15,12 @@
  *   greater than the mean.
  */
 function selectAboveMean(array) {
-  // This is your job. :)
+  const mean = array.reduce((a, b) => a + b) / array.length;
+  return array.filter(el => el > mean);
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for selectAboveMean:');
+  console.log('Running sanity checks for selectAboveMean:', selectAboveMean([1, 1, 1]), selectAboveMean([-10, -10, 0, 10]));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

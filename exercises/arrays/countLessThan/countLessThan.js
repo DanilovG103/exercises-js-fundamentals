@@ -16,7 +16,7 @@
  * @returns {number} The number of elements in the array less than threshold
  */
 function countLessThan(array, threshold) {
-  // This is your job. :)
+  return array.filter(el => el < threshold).length;
 }
 
 if (require.main === module) {

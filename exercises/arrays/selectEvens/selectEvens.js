@@ -14,11 +14,11 @@
  * @returns {number[]} A new array consisting of all the even numbers in the input array
  */
 function selectEvens(array) {
-  // This is your job. :)
+  return array.filter(el => el % 2 === 0);
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for selectEvens:');
+  console.log('Running sanity checks for selectEvens:', selectEvens([10, 2, 19, 10]));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

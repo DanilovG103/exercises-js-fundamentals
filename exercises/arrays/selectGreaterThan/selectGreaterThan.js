@@ -17,7 +17,7 @@
  *  strictly greater than the threshold
  */
 function selectGreaterThan(array, threshold) {
-  // This is your job. :)
+  return array.filter(el => el > threshold);
 }
 
 if (require.main === module) {

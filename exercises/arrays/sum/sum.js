@@ -9,7 +9,7 @@
  * @returns {number} The sum of the numbers in the array
  */
 function sum(array) {
-  // This is your job. :)
+  return array.reduce((a, b) => a + b);
 }
 
 if (require.main === module) {

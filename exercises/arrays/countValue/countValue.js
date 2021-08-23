@@ -15,11 +15,11 @@
  * @returns {number} The number of times the value appears in the array
  */
 function countValue(array, value) {
-  // This is your job. :)
+  return array.filter(el => el === value).length;
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for countValue:');
+  console.log('Running sanity checks for countValue:', countValue([1, 2, 3, 4, 5], 2), countValue(['hello', 'bananas', 'hello'], 'giraffe'));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

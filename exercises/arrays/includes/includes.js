@@ -19,7 +19,7 @@
  * @returns {boolean} True if the array contains the value, false otherwise.
  */
 function includes(haystack, needle) {
-  // This is your job. :)
+  return haystack.includes(needle);
 }
 
 if (require.main === module) {

@@ -12,7 +12,7 @@
  * @returns {number} The count of even integers in the array
  */
 function countOdds(array) {
-  // This is your job. :)
+  return array.filter(el => el % 2 !== 0).length;
 }
 
 if (require.main === module) {

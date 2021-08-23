@@ -9,7 +9,7 @@
  * @returns {number} The product of the numbers in the array
  */
 function product(array) {
-  // This is your job. :)
+  return array.reduce((a, b) => a * b);
 }
 
 if (require.main === module) {

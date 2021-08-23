@@ -7,15 +7,7 @@
  * @returns {number} The largest element in the array
  */
 function largest(array) {
-  let largestSoFar = array[0];
-
-  for (let element of array) {
-    if (element > largestSoFar) {
-      largestSoFar = element;
-    }
-  }
-
-  return largestSoFar;
+  return Math.max(...array);
 }
 
 if (require.main === module) {

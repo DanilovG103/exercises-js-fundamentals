@@ -7,7 +7,7 @@
  * @returns {number} The shortest string in the array
  */
 function shortest(array) {
-  // This is your job. :)
+  return Math.min(...array.map(el => el.length));
 }
 
 if (require.main === module) {

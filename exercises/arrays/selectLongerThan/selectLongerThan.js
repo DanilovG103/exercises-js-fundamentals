@@ -19,11 +19,11 @@
  *  strictly greater the given threshold
  */
 function selectLongerThan(array, threshold) {
-  // This is your job. :)
+  return array.filter(el => el.length > threshold);
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for selectLongerThan:');
+  console.log('Running sanity checks for selectLongerThan:', selectLongerThan(['', 'aaa', 'bb', 'c', 'dddd'], -1), selectLongerThan(['', 'aaa', 'bb', 'c', 'dddd'], 0));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

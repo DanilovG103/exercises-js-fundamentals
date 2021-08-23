@@ -14,7 +14,7 @@
  * @returns {number[]} A new array consisting of all the odd numbers in the input array
  */
 function selectOdds(array) {
-  // This is your job. :)
+  return array.filter(el => el % 2 !== 0);
 }
 
 if (require.main === module) {

@@ -14,11 +14,11 @@
  *   element removed.
  */
 function removeElement(array, element) {
-  // This is your job. :)
+  return array.filter(el => el !== element);
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for removeElement:');
+  console.log('Running sanity checks for removeElement:', removeElement([1, 1, 1], 1), removeElement([1, 2, 1], 1));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

@@ -12,11 +12,11 @@
  *   input array.
  */
 function removeEmpty(array) {
-  // This is your job. :)
+  return array.filter((item) => item || item);
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for removeEmpty:');
+  console.log('Running sanity checks for removeEmpty:', removeEmpty([null, '', '']));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
