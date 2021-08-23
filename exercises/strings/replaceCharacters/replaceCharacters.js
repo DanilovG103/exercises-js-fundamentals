@@ -12,7 +12,7 @@
  */
 
 function replaceCharacters(string, replacementDict) {
-  // This is your job. :)
+  return string.replace(/[a-z]/gi, m => replacementDict[m] || m);
 }
 
 if (require.main === module) {

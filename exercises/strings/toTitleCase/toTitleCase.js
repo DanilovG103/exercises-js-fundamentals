@@ -17,7 +17,7 @@
  */
 
 function toTitleCase(string) {
-  // This is your job. :)
+  return string.toLowerCase().split(' ').map(el => el.slice(0, 1).toUpperCase() + el.slice(1));
 }
 
 if (require.main === module) {

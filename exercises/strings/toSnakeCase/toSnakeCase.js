@@ -14,7 +14,7 @@
  */
 
 function toSnakeCase(string) {
-  // This is your job. :)
+  return string.split(' ').join('_');
 }
 
 if (require.main === module) {

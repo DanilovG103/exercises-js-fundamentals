@@ -13,11 +13,11 @@
  */
 
 function replaceCharacter(string, target, replaceWith) {
-  // This is your job. :)
+  return string.replace(new RegExp(`${target}`, 'g'), replaceWith);
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for replaceCharacter:');
+  console.log('Running sanity checks for replaceCharacter:', replaceCharacter('hello', 'l', '8'));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

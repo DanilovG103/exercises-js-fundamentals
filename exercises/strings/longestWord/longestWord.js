@@ -8,7 +8,7 @@
  */
 
 function longestWord(string) {
-  // This is your job. :)
+  return Math.max(...string.split(' ').map(el => el.length));
 }
 
 if (require.main === module) {

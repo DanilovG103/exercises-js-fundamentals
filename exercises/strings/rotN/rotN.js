@@ -15,12 +15,12 @@
  * @returns {string} A lowercase copy of the input string
  */
 
-function rotN(string) {
-  // This is your job. :)
+function rotN(str, n) {
+  return str.replace(/[a-zA-Z]/gi, (item) => String.fromCharCode(item.charCodeAt(0) + (item.toLowerCase() < 'n' ? n : -n)));
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for rotN:');
+  console.log('Running sanity checks for rotN:', rotN('Hello, world!', 9));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

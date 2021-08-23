@@ -8,7 +8,7 @@
  */
 
 function countWords(string) {
-  // This is your job. :)
+  return string.split(' ').length;
 }
 
 if (require.main === module) {

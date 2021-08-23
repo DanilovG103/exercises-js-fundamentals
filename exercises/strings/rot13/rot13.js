@@ -28,8 +28,8 @@
  * @returns {string} A lowercase copy of the input string
  */
 
-function rot13(string) {
-  // This is your job. :)
+function rot13(str) {
+  return str.replace(/[a-zA-Z]/gi, (item) => String.fromCharCode(item.charCodeAt(0) + (item.toLowerCase() < 'n' ? 13 : -13)));
 }
 
 if (require.main === module) {

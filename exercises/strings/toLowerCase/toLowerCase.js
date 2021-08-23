@@ -16,7 +16,7 @@
  */
 
 function toLowerCase(string) {
-  // This is your job. :)
+  return string.toLowerCase();
 }
 
 if (require.main === module) {

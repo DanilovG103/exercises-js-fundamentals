@@ -22,7 +22,7 @@
  */
 
 function countLetter(string, letter) {
-  // This is your job. :)
+  return [...string.match(new RegExp(`${letter}`, 'g'))].length;
 }
 
 if (require.main === module) {

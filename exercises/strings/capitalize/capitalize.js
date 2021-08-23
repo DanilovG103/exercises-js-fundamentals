@@ -11,11 +11,11 @@
  */
 
 function capitalize(string) {
-  // This is your job. :)
+  return string.slice(0, 1).toUpperCase() + string.slice(1);
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for capitalize:');
+  console.log('Running sanity checks for capitalize:', capitalize('hello zz'));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

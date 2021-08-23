@@ -16,7 +16,7 @@
  */
 
 function toUpperCase(string) {
-  // This is your job. :)
+  return string.toUpperCase();
 }
 
 if (require.main === module) {

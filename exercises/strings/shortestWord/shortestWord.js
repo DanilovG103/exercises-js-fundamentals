@@ -8,7 +8,7 @@
  */
 
 function shortestWord(string) {
-  // This is your job. :)
+  return Math.min(...string.split(' ').map(el => el.length));
 }
 
 if (require.main === module) {
