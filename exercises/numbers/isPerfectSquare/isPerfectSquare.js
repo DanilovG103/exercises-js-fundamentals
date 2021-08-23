@@ -20,16 +20,12 @@
  */
 
 function isPerfectSquare(num) {
-  // A negative number can't be a perfect square, so immediately return false.
-  if (num < 0) {
-    return false;
-  }
-
-  // The rest is your job. :)
+  if (num < 0) return false;
+  return Math.sqrt(num) % 1 === 0;
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for isPerfectSquare:');
+  console.log('Running sanity checks for isPerfectSquare:', isPerfectSquare(0), isPerfectSquare(2), isPerfectSquare(9));
 
   // Your sanity checks go here
 }

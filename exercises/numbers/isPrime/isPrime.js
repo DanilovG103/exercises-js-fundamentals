@@ -10,16 +10,11 @@
  * @param {number} num - The positive integer whose primality we want to check
  * @returns {boolean} True if num is prime and false otherwise
  */
-function isPrime(num) {
-  /*
-    Your code goes here.
-
-    Work out one version that works and don't worry about performance.
-
-    If you're having trouble working it out in code, step out of JS-land
-    and use pen/paper, index cards, etc. — anything that helps you think
-    about it without getting stuck in JavaScript syntax.
-  */
+function isPrime(n) {
+  for (let i = 2; i < n; i += 1) {
+    if (n % i === 0) return false;
+  }
+  return n > 1;
 }
 
 if (require.main === module) {

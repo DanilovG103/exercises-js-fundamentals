@@ -12,11 +12,15 @@
  * @returns {boolean} The sum of every integer between the two input integers, inclusive
  */
 function sumOfRange(leftSummand, rightSummand) {
-  // This is your job. :)
+  let arr = [];
+  for (leftSummand; leftSummand <= rightSummand; leftSummand++) {
+    arr.push(leftSummand);
+  }
+  return arr.reduce((a, b) => a + b);
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for sumOfRange:');
+  console.log('Running sanity checks for sumOfRange:', sumOfRange(1, 5));
 
   // Your sanity checks go here
 }

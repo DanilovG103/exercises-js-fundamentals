@@ -22,8 +22,7 @@
  * @returns {boolean} True if `num` is a power of `base` and false otherwise.
  */
 function isPowerOf(num, base) {
-  // Your code here
-  // Remember, you can assume that num is a positive integer.
+  //
 }
 
 if (require.main === module) {

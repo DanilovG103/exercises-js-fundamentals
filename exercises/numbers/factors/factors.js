@@ -14,14 +14,13 @@ function factors(num) {
   let results = [];
 
   for (let i = 1; i <= num; i++) {
-    // Your code goes here. :)
-    // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+    results.push(i);
   }
   return results;
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for factors:');
+  console.log('Running sanity checks for factors:', factors(2), factors(4));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

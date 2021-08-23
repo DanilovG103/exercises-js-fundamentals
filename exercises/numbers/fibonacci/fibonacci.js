@@ -22,7 +22,7 @@
  * @returns {number} The fibonacci of num
  */
 function fibonacci(n) {
-  // This is your job. :)
+  return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 if (require.main === module) {

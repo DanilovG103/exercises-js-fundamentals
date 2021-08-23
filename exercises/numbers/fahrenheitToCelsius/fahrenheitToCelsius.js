@@ -5,7 +5,7 @@
  * @returns {boolean} The temperature in celsius
  */
 function fahrenheitToCelsius(temp) {
-  // This is your job. :).
+  return 5 / 9 * (temp - 32);
 }
 
 if (require.main === module) {

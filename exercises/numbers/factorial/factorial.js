@@ -23,11 +23,11 @@
  * @returns {number} The factorial of `n`
  */
 function factorial(n) {
-  // This is your job. :)
+  return (n !== 1) ? n * factorial(n - 1) : n;
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for factorial:');
+  console.log('Running sanity checks for factorial:', factorial(3));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
